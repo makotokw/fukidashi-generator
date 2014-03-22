@@ -1,0 +1,71 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+$twitter-font-family: Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header,
+.main-content,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+.main-content {
+  margin-top: 30px;
+
+  .fukidashi {
+    font-family: $twitter-font-family;
+  }
+}
+
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  .header,
+  .main-content,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+}
