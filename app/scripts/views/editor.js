@@ -13,7 +13,6 @@ fukidashiGenerator.Views = fukidashiGenerator.Views || {};
         template: JST['app/scripts/templates/editor.ejs'],
 
         render: function () {
-            console.log(this.model.attributes);
             $(this.el).html(this.template({
                 serifu: this.model.attributes
             }));
