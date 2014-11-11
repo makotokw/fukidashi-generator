@@ -44,7 +44,8 @@ fukidashiGenerator.Views = fukidashiGenerator.Views || {};
             var width = 0;
             for (var i = 0; i < text.length; i++) {
                 var c = text.charCodeAt(i);
-                width += ((c < 256 || (c >= 0xff61 && c <= 0xff9f)) ? 0.5 : 1);
+                // 0xff61～0xffa0: Japanese half-width Katakana
+                width += ((c < 0x0100 || (c >= 0xff61 && c <= 0xff9f)) ? 0.5 : 1);
             }
             return width;
         },
